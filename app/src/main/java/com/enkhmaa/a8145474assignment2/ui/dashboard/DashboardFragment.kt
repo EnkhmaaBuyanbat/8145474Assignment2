@@ -79,7 +79,7 @@ class DashboardFragment : Fragment() {
         when (state) {
             is DashboardUiState.Success -> {
                 adapter.submitList(state.entities)
-                binding.toolbar.subtitle = "Total Entities: ${state.total}"
+                binding.toolbar.subtitle = getString(com.enkhmaa.a8145474assignment2.R.string.entity_count_format, state.total)
             }
             is DashboardUiState.Error -> {
                 binding.errorText.text = state.message

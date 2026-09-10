@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Core Palette -->
+    <color name="primary">#1A237E</color>         <!-- Deep Indigo -->
+    <color name="primary_variant">#121858</color>
+    <color name="secondary">#7E57C2</color>       <!-- Blue Violet -->
+    <color name="accent">#00BCD4</color>
+
+    <!-- Surfaces -->
+    <color name="background">#F8F9FA</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="error">#B00020</color>
+
+    <!-- Text -->
+    <color name="text_primary">#1C1B1F</color>
+    <color name="text_secondary">#49454F</color>
+    <color name="text_on_primary">#FFFFFF</color>
+
+    <!-- Decorative -->
+    <color name="divider">#CAC4D0</color>
+    <color name="chip_bg">#E8EAF6</color>
+    <color name="chip_text">#283593</color>
+
+    <!-- Legacy compatibility if needed -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-
-    <!-- Technology themed colors -->
-    <color name="tech_primary">#0D47A1</color>
-    <color name="tech_primary_variant">#002171</color>
-    <color name="tech_secondary">#26C6DA</color>
-    <color name="tech_background">#F5F7FA</color>
-    <color name="tech_error">#D32F2F</color>
-    <color name="tech_text_primary">#263238</color>
-    <color name="tech_text_secondary">#546E7A</color>
 </resources>

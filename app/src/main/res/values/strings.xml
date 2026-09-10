@@ -1,11 +1,27 @@
 <resources>
     <string name="app_name">8145474Assignment2</string>
+
+    <!-- Login -->
     <string name="login_title">Tech Explorer</string>
-    <string name="login_subtitle">Sign in to explore the latest technology entities</string>
+    <string name="login_subtitle">Discover technology through real API data.</string>
     <string name="username_hint">Username</string>
     <string name="password_hint">Password</string>
-    <string name="login_button">Login</string>
-    <string name="error_empty_username">Username cannot be empty</string>
-    <string name="error_empty_password">Password cannot be empty</string>
-    <string name="login_loading">Authenticating...</string>
+    <string name="login_button">Sign In</string>
+    <string name="error_invalid_input">Please enter both username and password.</string>
+    <string name="login_loading">Authenticating…</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">Technology</string>
+    <string name="dashboard_subtitle">Explore devices and platforms</string>
+    <string name="entity_count_format">Total entities: %1$d</string>
+    <string name="empty_state">No technology entities found.</string>
+    <string name="error_load_failed">Failed to load dashboard.</string>
+    <string name="retry_button">Retry</string>
+
+    <!-- Details -->
+    <string name="details_title">Device Details</string>
+    <string name="label_manufacturer">Manufacturer</string>
+    <string name="label_os">Operating System</string>
+    <string name="label_release_year">Release Year</string>
+    <string name="label_description">Description</string>
 </resources>
