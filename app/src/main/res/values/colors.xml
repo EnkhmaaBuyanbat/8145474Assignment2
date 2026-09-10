@@ -2,4 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Technology themed colors -->
+    <color name="tech_primary">#0D47A1</color>
+    <color name="tech_primary_variant">#002171</color>
+    <color name="tech_secondary">#26C6DA</color>
+    <color name="tech_background">#F5F7FA</color>
+    <color name="tech_error">#D32F2F</color>
+    <color name="tech_text_primary">#263238</color>
+    <color name="tech_text_secondary">#546E7A</color>
 </resources>
