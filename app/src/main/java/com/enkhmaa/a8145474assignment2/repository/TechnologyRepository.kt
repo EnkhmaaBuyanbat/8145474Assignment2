@@ -6,16 +6,21 @@ import com.enkhmaa.a8145474assignment2.data.LoginResponse
 import com.enkhmaa.a8145474assignment2.network.ApiService
 import javax.inject.Inject
 
-class TechnologyRepository @Inject constructor(
-    private val apiService: ApiService
-) {
+interface TechnologyRepository {
+    suspend fun login(username: String, password: String): LoginResponse
+    suspend fun getDashboard(keypass: String): DashboardResponse
+}
 
-    suspend fun login(username: String, password: String): LoginResponse {
+class TechnologyRepositoryImpl @Inject constructor(
+    private val apiService: ApiService
+) : TechnologyRepository {
+
+    override suspend fun login(username: String, password: String): LoginResponse {
         val request = LoginRequest(username, password)
         return apiService.login(request)
     }
 
-    suspend fun getDashboard(keypass: String): DashboardResponse {
+    override suspend fun getDashboard(keypass: String): DashboardResponse {
         return apiService.getDashboard(keypass)
     }
 }
