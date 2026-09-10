@@ -25,5 +25,18 @@
         <argument
             android:name="keypass"
             app:argType="string" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.enkhmaa.a8145474assignment2.ui.details.DetailsFragment"
+        android:label="Details"
+        tools:layout="@layout/fragment_details">
+        <argument
+            android:name="technology"
+            app:argType="com.enkhmaa.a8145474assignment2.data.Technology" />
     </fragment>
 </navigation>

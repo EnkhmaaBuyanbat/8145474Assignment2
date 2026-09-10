@@ -4,13 +4,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.enkhmaa.a8145474assignment2.databinding.FragmentDashboardBinding
@@ -57,8 +57,8 @@ class DashboardFragment : Fragment() {
 
     private fun setupRecyclerView() {
         adapter = TechnologyAdapter { technology ->
-            // For now, just show a toast. Navigation to details will be implemented later.
-            Toast.makeText(requireContext(), "Clicked: ${technology.deviceName}", Toast.LENGTH_SHORT).show()
+            val action = DashboardFragmentDirections.actionDashboardFragmentToDetailsFragment(technology)
+            findNavController().navigate(action)
         }
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.recyclerView.adapter = adapter

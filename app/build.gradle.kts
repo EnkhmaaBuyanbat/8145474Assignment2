@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.hilt.android)
     alias(libs.plugins.ksp)
     alias(libs.plugins.androidx.navigation.safeargs)
+    alias(libs.plugins.kotlin.parcelize)
 }
 
 android {
